@@ -1,0 +1,19 @@
+<html>
+<body>
+<script type="text/javascript">
+document.write("entering the loop");
+outerloop:
+for(var i=0;i<5;i++)
+{
+innerloop:
+for(var j=1;j<10;j++)
+{
+	if(j>3) break;
+	if(i==2) break innerloop;
+	if(i==4) break outerloop;
+}
+}
+document.write("exiting the loop");
+</script>
+</body>
+</html>

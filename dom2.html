@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>"Document tile"</title>
+<script type="text/javascript">
+function myFun(){
+	var ret=document.getElementsByTagName("title");
+	alert(ret[0].text);
+	var ret = document.getElementById("heading");
+	alert(ret.innerHTML);
+}
+</script>
+</head>
+<body>
+<form id = "form1" name="firstform">
+<input type="button" value="click me" onclick="myFun();"/>
+<input type="button" value = "cancel">
+</form>
+<form id="form2" name="secondform">
+<input type="button" value="dont clickme"/>
+</form>
+</body>
+</html>

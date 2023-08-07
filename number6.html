@@ -1,0 +1,21 @@
+<html>
+<head>
+<script type="text/javascript">
+function book(title,author)
+{
+	this.title=title;
+	this.author=author;
+}
+</script>
+</head>
+<body>
+<script type="text/javascript">
+var myBook = new book("perl","mohan");
+book.prototype.price=null;
+myBook.price=100;
+document.write("book title is "+myBook.title);
+document.write("book author is "+myBook.author);
+document.write("book price is "+myBook.price);
+</script>
+</body>
+</html>

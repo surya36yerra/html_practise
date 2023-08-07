@@ -1,0 +1,24 @@
+<html>
+<head>
+<script type="text/javascript">
+function func1(price)
+{
+	this.price=price;
+}
+function func2(name,no){
+	this.name=name;
+	this.no=no;
+	this.func1=func1;
+}
+</script>
+</head>
+<body>
+<script type="text/javascript">
+var myvar  = new func2("surya",9);
+myvar.func1(9999);
+document.write("name" + myvar.name);
+document.write("no" + myvar.no);
+document.write("price" + myvar.price);
+</script>
+</body>
+</html>
